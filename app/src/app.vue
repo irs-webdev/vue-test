@@ -13,11 +13,13 @@ module.exports = {
 }
 </script>
 
-<style>
+<style lang="scss">
+	$mainFont: 'Segoe UI', Arial, sans-serif;
+
 	body {
-		font-family: 'Segoe UI', Arial, sans-serif;
+		font-family: $mainFont;
 	}
-	
+
 	h1 {
 		font-size: 25px;
 	}
