@@ -1,0 +1,30 @@
+{
+  "name": "vue-test",
+  "version": "1.0.0",
+  "description": "Simple vue template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irs-webdev/vue-test.git"
+  },
+  "author": "irs-webdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irs-webdev/vue-test/issues"
+  },
+  "homepage": "https://github.com/irs-webdev/vue-test#readme",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "fs-extra": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "run-sequence": "^2.2.1",
+    "vinyl-source-stream": "^2.0.0",
+    "vue": "^2.5.17",
+    "vueify": "^9.4.1",
+    "vueify-extract-css": "^0.2.0"
+  }
+}
