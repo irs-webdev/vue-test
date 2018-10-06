@@ -1,7 +1,28 @@
-/* line 19, stdin */
-body {
+/* line 54, stdin */
+.todo {
   font-family: "Segoe UI", Arial, sans-serif; }
 
-/* line 23, stdin */
+/* line 58, stdin */
 h1 {
   font-size: 25px; }
+
+/* line 63, stdin */
+.task-list li.done {
+  color: #777;
+  text-decoration: line-through; }
+
+/* line 68, stdin */
+.task-list button {
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  background: #454545;
+  color: white; }
+
+/* line 76, stdin */
+.task-list .task-complete {
+  background: green; }
+
+/* line 80, stdin */
+.task-list .task-delete {
+  background: maroon; }
