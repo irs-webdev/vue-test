@@ -1,7 +1,7 @@
 <template>
 	<div class="todo">
 		<h1>{{title}}</h1>
-		<label>Новая задача: <input type="text" v-model="newTask"></label> <button v-on:click="addTask()">Добавить</button>
+		<task-input v-on:new-task="addTask"></task-input>
 		<ul class="task-list">
 			<li v-for="(task, index) in tasks" v-bind:class="{ done: task.done }">
 				{{task.title}} 
@@ -26,8 +26,7 @@ module.exports = {
 					title: "Испечь пирог",
 					done: false
 				}
-			],
-			newTask: ""
+			]
 		}
 	},
 	methods: {
@@ -37,12 +36,11 @@ module.exports = {
 		removeTask: function(i) {
 			this.tasks.splice(i, 1);
 		},
-		addTask: function() {
+		addTask: function(title) {
 			this.tasks.push({
-				title: this.newTask,
+				title: title,
 				done: false
 			});
-			this.newTask = "";
 		}
 	}
 }
